@@ -1,1 +1,1 @@
-# AnijahPam.github.io
+# AnijahPam.github.io./fsd-setup/setup.sh
