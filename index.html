@@ -5,17 +5,60 @@
 nav {
       background: rgb(204,204,255);
       margin: 0 auto;
+      margin-bottom: 20px;
       display: flex;
       padding: 10px;
   }
   body{
+
    background-color: rgb(230,232,250);
-  }
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 10px
+
+
+}
   h1 {
    color: #966fd6;
+   display: flex;
+   padding: 10px;
+   flex: 1;
+   margin: 0;
 }
 
+#nav-ul {
+    list-style-image: none;
+}
 
+.nav-li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+main {
+       display: flex;
+   }
+   .sidebar {
+       margin-right: 25px;
+       padding: 10px;
+   }
+   .sidebar-img {
+       width: 200px;
+   }
+   .content {
+       flex: 1;
+       padding: 15px;
+   }
+
+
+#all-contents {
+   max-width: 800px;
+   margin: auto;
+}
 
 
 #sectionA {
@@ -37,7 +80,7 @@ nav {
 </head>
 
 <body>
-
+<!-- All content goes here -->
     <main>
         <div>
             <img src="vw.jpeg" alt="night sky background"  width="1300" height="300">
@@ -54,19 +97,31 @@ nav {
                         <a href="portfolio.html"> Portfolio </a>
                     </li>
                 </ul>
-            </nav>
-            <h2> Anijah Pam</h2>
-            <p> This is my first website! I'll be sixteen later this year. I have a pet dog named Gigi who's a little frenchie. I have three sisters and after graduation I'd like to move up north to Michigan. </p>
+            </nav
         </div>
 
     </main>
 
-    <div id="sectionB" >
-        <h3> Intrests</h3>
-        <p> I like playing video games, music, art and other things.</p>
+<!-- Content Section-->
+   <div>
+       <h2> Anijah Pam</h2>
+       <p>This is my first website</p>
+       <!-- Interests section -->
+       <div>
+           <h3>Interests</h3>
+           <ul>
+               <li>Art</li>
+               <li>Gaming</li>
+               <li>Animals</li>
+           </ul>
+       </div>
+   </div>
 
-    </div>
- 
+   <!-- Sidebar section -->
+  <div>
+    <img src="kururin-kuru-kuru.gif" width="50">
+</div
+  
 </body>
 
 </html>
