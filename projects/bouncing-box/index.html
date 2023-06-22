@@ -67,7 +67,8 @@
 
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
-
+var points = 0
+var speed = 10
 
 
 			/* 
@@ -76,47 +77,16 @@
 			turn it around! 
 			*/
 			function update() {
- /* Your Code to Increase positionX by 10 HERE*/
- positionX = positionX * 10
+				/* Your Code to Increase positionX by 10 HERE*/
+				positionX = positionX + speed;
 				moveBoxTo(positionX)
-			// When you first create the Variable...
-var positionX = 0;
 
-// during update... 
-// Frame 1
-positionX = 0 + 10;         // positionX = 10
-moveBoxTo(positionX);
-
-// Frame 2
-positionX = 10 + 10;         // positionX = 20
-moveBoxTo(positionX);
-
-// Frame 3
-positionX = 20 + 10;         // positionX = 30
-moveBoxTo(positionX);
-
-// Frame 4
-positionX = 30 + 10;         // positionX = 40
-moveBoxTo(positionX);
-
-// Frame 5
-positionX = 40 + 10;         // positionX = 50
-moveBoxTo(positionX);
-
-// Frame 6
-positionX = 50 + 10;         // positionX = 60
-moveBoxTo(positionX);
-
-// Frame 7
-positionX = 60 + 10;         // positionX = 70
-moveBoxTo(positionX);
-
-// Frame 8
-positionX = 70 + 10;         // positionX = 80
-moveBoxTo(positionX);
-
-
-// so on...	
+				if (positionX > boardWidth) {
+					speed = -speed;
+				}
+				else if (positionX < 0) {
+					speed = -speed;
+				}
 
 			}
 
@@ -128,33 +98,16 @@ moveBoxTo(positionX);
 			function handleBoxClick() {
 
 				positionX = 0;
-				// When you first create the Variable...
-				// When you first create the Variable...
-var positionX = 0;
+			changeBoxText (points);
+			points = points + 1
+			speed = speed += 3
 
-// during update... 
-// Frame 1
-positionX = 0 + 10;         // positionX = 10
-moveBoxTo(positionX);
+			if (speed > 0); {
+			speed = speed + 3 }
+			 else (speed) {
 
-// Frame 2
-positionX = 10 + 10;        // positionX = 20
-moveBoxTo(positionX);
-
-// The Box is Clicked
-positionX = 0;              // positionX = 0
-
-// back to update...
-// Frame 3
-positionX = 0 + 10;         // positionX = 10
-moveBoxTo(positionX);
-
-// Frame 4
-positionX = 10 + 10;         // positionX = 20
-moveBoxTo(positionX);
-
-// so on
-
+}
+   speed = 
 
 			}
 		})();
